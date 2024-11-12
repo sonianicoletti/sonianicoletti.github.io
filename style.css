@@ -47,16 +47,10 @@
 
 body {
     font-family: 'Computer Modern Serif', serif;
-    margin: 0;
+    margin: 0 1em;
     padding: 0;
     line-height: 1.6;
-    background-image : url("assets/noise_background.png")
-}
-
-@media (min-width: 768px) {
-    body {
-        margin: 0em 20em; /* Large margins for wider screens */
-    }
+    background-image: url("assets/noise_background.png");
 }
 
 p {
@@ -425,4 +419,48 @@ h1 {
 
 footer {
     padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: fit-content;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .profile-picture {
+        width: 150px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Change to a single column */
+    }
+    header nav ul {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        margin: 0 2em; /* Slightly larger margins for small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0 5em; /* Medium margins for tablet-sized screens */
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        margin: 0 10em; /* Larger margins for larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        margin: 0 20em; /* Largest margins for wide screens */
+    }
 }
