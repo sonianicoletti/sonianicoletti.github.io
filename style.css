@@ -1,15 +1,70 @@
+/* Color Variables */
+:root {
+    --color-background-dark: #333;
+    --color-text-light: #fff;
+    --color-background-light: #555;
+    --color-border: #ccc;
+    --color-text-muted: #555;
+    --color-text-primary: #333;
+    --color-tan: #eee4d5;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-sage: #d7f6d5;
+    --color-tan-light: #f4efe7;
+    --color-grey-light: #a1a1a1;
+}
+
 /* General Styles */
+@font-face {
+    font-family: 'Computer Modern Serif';
+    src: url('assets/computer-modern/cmunrm.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern Serif';
+    src: url('assets/computer-modern/cmunbx.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Computer Modern Concrete';
+    src: url('assets/computer-modern/cmunorm.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern Concrete';
+    src: url('assets/computer-modern/cmunobx.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Computer Modern Typewriter';
+    src: url('assets/computer-modern/cmunbtl.ttf') format('truetype');
+    font-weight: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Computer Modern Serif', serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-image : url("assets/noise_background.png")
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0em 20em; /* Large margins for wider screens */
+    }
+}
+
+p {
+    line-height: 1.4; /* Reduces the space between lines */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0 1rem 0;
 }
 
 header nav ul {
@@ -21,71 +76,353 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--color-black);
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 header nav ul li a:hover {
-    background: #555;
-    border-radius: 4px;
+    text-decoration: underline;
 }
 
-/* Section Styles */
 section {
     padding: 2rem;
     text-align: center;
 }
 
-.about-content {
+/* About Section Styling */
+#about {
+    padding: 20px 40px 40px 40px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
-.about-content img {
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 1em;
+    text-align: left;
+}
+
+.about-left {
+    flex: 1;
+    margin-top: 1em;
+}
+
+.profile-picture {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.social-links a img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 30px;
+    height: 30px; 
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+.about-right {
+    flex: 2;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.about-description {
+    margin-bottom: 20px;
+}
+
+.about-details {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.interests,
+.education {
+    flex: 1;
+    min-width: 250px; /* Ensures elements stay aligned on smaller screens */
+}
+
+.interests h3,
+.education h3 {
+    margin-bottom: 10px;
+    color: var(--color-text-primary);
+}
+
+.interests ul,
+.education ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
 .button {
     display: inline-block;
     padding: 0.7rem 1.5rem;
-    background: #333;
-    color: #fff;
+    background: var(--color-background-dark);
+    color: var(--color-text-light);
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .button:hover {
-    background: #555;
+    background: var(--color-background-light);
 }
 
-/* Project Styles */
+.about-interests {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows the <p> elements to wrap to a new row */
+    gap: 10px;
+}
+
+.about-interests p {
+    background-color: var(--color-white);
+    white-space: nowrap; /* Prevents text from breaking to the next line */
+    width: fit-content;
+    margin: 0;
+    padding: 0 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-grey-light);
+}
+
+
+/* News Section */
+
+#news ul {
+    text-align: left;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+}
+
+/* Project Grid Container */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between projects */
+    margin-left: 20px; /* Left margin */
+    margin-right: 20px; /* Right margin */
+    padding: 20px 0;
+}
+
 .project {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem auto;
-    max-width: 800px;
+    border: 1px solid var(--color-tan);
+    border-radius: 5px;
+    background-color: var(--color-tan);
+    padding: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: left;
 }
 
-.slideshow img {
-    display: none;
+.project img {
     width: 100%;
-    max-height: 300px;
+    height: auto;
 }
 
-.slideshow img:first-child {
+.project h3 {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.project h2 {
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project h3:hover {
+    text-decoration: underline;
+}
+
+.short-description {
+    color: var(--color-text-muted);
+}
+
+/* Expanded Project */
+.project.expanded {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+}
+
+.project.expanded .project-image,
+.project.expanded .short-description {
+    display: none;
+}
+
+/* Image, Title, and Short Description Visibility */
+.project-image,
+.short-description,
+.project h3 {
+    display: block; /* Default display */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-image {
+    width: 100%; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any part of the image that overflows */
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area and crops if necessary */
+}
+
+.project.expanded .project-details {
     display: block;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
+.project.expanded .project-details h3 {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+}
+
+.project.expanded h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.project .project-details {
+    display: none;
+}
+
+.project-date {
+    font-style: italic;
+}
+
+.project-technologies,
+.project-type {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.project-technologies p {
+    font-family: 'Computer Modern Concrete';
+    font-weight: bold;
+    background-color: var(--color-white);
+    width: fit-content;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.project-type p {
+    font-family: 'Computer Modern Concrete';
+    font-weight: bold;
+    width: fit-content;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: x-small;
+    background-color: var(--color-white);
+    padding: 3px 5px 0 5px;
+}
+
+/* Carousel */
+/* Carousel Container */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the carousel horizontally */
+    position: relative;
+    margin: 20px 0;
+    width: 100%; /* Ensure it takes full width of the parent */
+    overflow: hidden; /* Hide images that are out of view */
+}
+
+/* Carousel Images Wrapper */
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition when moving images */
+    justify-content: center; /* Center images within the wrapper */
+    align-items: center; /* Align images vertically */
+}
+
+/* Each Carousel Image */
+.carousel-image {
+    height: 300px; /* Fixed height for each image */
+    width: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent image containers from shrinking */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent images from overflowing */
+}
+
+/* Only the active image will be shown */
+.carousel-image.active {
+    display: flex;
+}
+
+/* Image inside the carousel */
+.carousel-image img {
+    width: 100%; /* Ensure the image scales to fit the container width */
+    height: 100%; /* Set the height to fill the container */
+    object-fit: contain; /* Preserve the full image without cropping */
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-btn.prev {
+    left: 10px; /* Position the "prev" button to the left */
+}
+
+.carousel-btn.next {
+    right: 10px; /* Position the "next" button to the right */
+}
+
+.carousel-btn:hover {
+    background-color: var(--color-background-light);
+}
+
+/* Footer */
+
+footer {
+    padding: 2rem;
 }

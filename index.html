@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sonia Nicoletti</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -19,26 +21,641 @@
     </header>
 
     <section id="about">
-        <h1>About Me</h1>
         <div class="about-content">
-            <img src="assets/profile.jpeg" alt="Profile Picture">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et efficitur nisi. Curabitur malesuada lectus non felis tempus, at vehicula lorem egestas.</p>
+            <!-- Left Side: Profile Picture -->
+            <div class="about-left">
+                <img src="assets/profile.jpg" alt="Profile Picture" class="profile-picture">
+            </div>
+    
+            <!-- Right Side: About Me, Interests, Education -->
+            <div class="about-right">
+                <h1>Sonia Nicoletti</h1>
+                <p class="about-description">
+                    Hello! I'm Sonia, a computer science student at the University of Bologna with a passion for innovative technology and problem-solving. In 2022, I graduated with honors in Computer Science for Management, where I developed a strong foundation in both technical and analytical skills. 
+                    Now, I'm pursuing advanced studies to deepen my expertise in different areas of computer science.
+                </p>
+                <div class="about-details">
+                    <!-- Interests -->
+                    <div class="interests">
+                        <h3>Research Interests</h3>
+                        <div class="about-interests">
+                            <p>Natural Language Processing</p>
+                            <p>AI Ethics</p>
+                            <p>Software Engineering Practices</p>
+                            <p>Computing Education</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <h1>News</h1>
+        <ul>
+            <li>
+                <i>April 2024: </i>I joined the <a href="https://www.micron.com/">Micron 2024 Global Women Mentoring Program</a> as a mentee.
+            </li>
+            <li>
+                <i>April 2024: </i>I participated at the <a href="https://jobs.bendingspoons.com/positions/65d39f62fb3e85b0ebe7e124">Follow the White Rabbit Aperitivo</a> hosted by Bending Spoons at their HQ in Milan.
+            </li>
+            <li>
+                <i>Septmber 2023: </i>I started my study abroad semester at <a href="https://www.ntu.edu.tw/english/">National Taiwan University</a> in Taipei.
+            </li>
+            <li>
+                <i>August 2023: </i>I attended the <a href="https://cmmrs2023.mpi-sws.org/">Cornell, Maryland, Max Planck Pre-doctoral Research School 2023</a> in Saarbrücken, Germany.
+            </li>
+            <li>
+                <i>October 2023: </i>I started writing articles for the <a href="https://studyabroadblog.drexel.edu/author/sonianicoletti/">Study Abroad Student Blog</a> at Drexel University. 
+            </li>
+            <li>
+                <i>September 2023: </i>I started my study abroad semester at <a href="https://drexel.edu/">Drexel University</a> in Philadelphia, Taiwan.
+            </li>
+        </ul>
+    </section>
+    
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-grid">
+            <!-- Project 10 -->
+            <div class="project" data-id="10">
+                <div class="project-image">
+                    <img src="assets/bi/bi_01.png" alt="Project BI">
+                </div>
+                <h3>Customer segmentation analysis for AI-Driven Healthcare Applications</h3>
+                <div class="project-type">
+                    <p>Business Intelligence</p>
+                </div>
+                <p class="short-description">Clustering potential users of AI-driven healthcare applications through survey analysis.</p>
+                <div class="project-details">
+                    <h2>Customer segmentation analysis for AI-Driven Healthcare Applications</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/bi/bi_01.png" alt="Project 1 Image 1">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/bi/bi_02.png" alt="Project 1 Image 2">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/bi/bi_03.png" alt="Project 1 Image 3">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/bi/bi_04.png" alt="Project 1 Image 4">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/bi/bi_05.png" alt="Project 1 Image 5">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/bi/bi_06.png" alt="Project 1 Image 6">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">July 2024</p>
+                    <div class="project-technologies">
+                        <p>SAS</p>
+                        <p>Python</p>
+                    </div>
+                    <p class="long-description">
+                        This project examines customer segmentation for AICare4You, an envisioned AI-powered medical chatbot designed to provide health advice and medication prescriptions based on user data. 
+                        <br> By analyzing survey responses from potential users, the study identifies key preferences for chatbot functionalities, such as a focus on general wellness or diagnosis-oriented features. Using Principal Component Analysis (PCA) and hierarchical clustering techniques, five distinct customer segments were identified, ranging from cost-conscious skeptics to fitness enthusiasts and AI enthusiasts who fully embrace the technology. These insights highlight the diverse expectations and challenges in designing AI-driven healthcare solutions.
+                    </p>
+                </div>
+            </div>
+            <!-- Project 9 -->
+            <div class="project" data-id="9">
+                <div class="project-image">
+                    <img src="assets/social_media/social_00.png" alt="Project Social Media and Social Network Analysis">
+                </div>
+                <h3>Exploring Public Discourse on AI Risks</h3>
+                <div class="project-type">
+                    <p>Social Media Analysis</p>
+                </div>
+                <p class="short-description">Analyzing public discourse on AI risks through sentiment and topic modeling.</p>
+                <div class="project-details">
+                    <h2>Exploring Public Discourse on AI Risks</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/social_media/social_00.png" alt="Project SOCNE Image 1">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/social_media/social_01.png" alt="Project SOCNE Image 2">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/social_media/social_02.png" alt="Project SOCNE Image 3">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/social_media/social_03.png" alt="Project SOCNE Image 4">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/social_media/social_04.png" alt="Project SOCNE Image 5">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/social_media/social_05.png" alt="Project SOCNE Image 6">
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">January 2024</p>
+                    <div class="project-technologies">
+                        <p>R</p>
+                        <p>Python</p>
+                    </div>
+                    <p class="long-description">This social media research explores the public discourse surrounding the risks and opportunities associated with artificial intelligence. I collected and analyzed YouTube comments from AI-related videos published between 2020 and 2023. <br>
+                        The methodology involved sentiment analysis, topic modeling, and dictionary-based text analysis.
+                    </p>
+                    <a href="https://github.com/sonianicoletti/SOCNE-Project">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project 8 -->
+            <div class="project" data-id="8">
+                <div class="project-image">
+                    <img src="assets/maths/mate_1.png">
+                </div>
+                <h3>Syntax Analysis Tutorial</h3>
+                <div class="project-type">
+                    <p>Compilers</p>
+                </div>
+                <p class="short-description">LL(1) grammar parsing tutorial with interactive exercises.</p>
+                <div class="project-details">
+                    <h2>Syntax Analysis Tutorial</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/maths/mate_1.png">
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">July 2023</p>
+                    <div class="project-technologies">
+                        <p>Mathematica</p>
+                    </div>
+                    <p class="long-description">This Mathematica tutorial contains a generator of exercises on parsing LL(1) grammars. The objective is to explain to the user the procedure for solving this type of exercise. The exercise consists of generating the Nullable, First and Follow sets and filling in the parsing table.
+                        <br>The primary areas of our focus revolved around the management of nested lists, comprehension of function scope, and the creation of user interfaces. Moreover, we applied our expertise in compiler theory to assess and streamline the core aspects of this subject matter.
+                    </p>
+                    <a href="https://github.com/sonianicoletti/ProgettoMC">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project" data-id="7">
+                <div class="project-image">
+                    <img src="assets/data_mining/INFO371_00.jpg">
+                </div>
+                <h3>Tailored Travel Insurance Solutions</h3>
+                <div class="project-type">
+                    <p>Data Mining</p>
+                </div>
+                <p class="short-description">Predictive model for recommending travel insurance.</p>
+                <div class="project-details">
+                    <h2>Tailored Travel Insurance Solutions</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_00.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_01.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_02.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_03.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_04.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_05.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_06.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_07.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_08.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_09.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_10.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_11.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_12.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_13.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_14.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_15.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_16.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_17.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_18.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_19.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_20.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_21.jpg">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/data_mining/INFO371_22.jpg">
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">December 2022</p>
+                    <div class="project-technologies">
+                        <p>R</p>
+                        <p>WEKA</p>
+                    </div>
+                    <p class="long-description">
+                        The objective of this project was to build a predictive model that could suggest the most fitting travel insurance package for a particular customer. The tools used were WEKA and R.
+                    </p>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project" data-id="6">
+                <div class="project-image">
+                    <img src="assets/mobile_apps/app_01.png">
+                </div>
+                <h3>Cluedo Mobile</h3>
+                <div class="project-type">
+                    <p>Mobile Apps</p>
+                </div>
+                <p class="short-description">Cluedo-inspired Android app using Clean Architecture.</p>
+                <div class="project-details">
+                    <h2>Cluedo Mobile</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_01.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_02.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_03.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_04.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_05.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_06.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_07.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_08.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_09.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_10.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_11.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_12.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_13.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/app_14.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/mobile_apps/clean_architecture.png">
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">June 2022</p>
+                    <div class="project-technologies">
+                        <p>Kotlin</p>
+                        <p>Firebase</p>
+                    </div>
+                    <p class="long-description">
+                        This Android app is inspired by the famous mystery game Cluedo. Friends can play online together by joining the same game. Once the host has started the game each player has to guess Where, by Who and How the murder was committed making accusations and replying to others accusations. <br>
+                        The front-end side has been realised using Kotlin and the Clean Architecture paradigm, in particular MVVM pattern. The back-end and the multiplayer functionality have been realised through Firebase.
+                    </p>
+                    <a href="https://github.com/sonianicoletti/ProgettoLAM">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project" data-id="5">
+                <div class="project-image">
+                    <img src="assets/web_tech/tecweb (1).png">
+                </div>
+                <h3>Animal House</h3>
+                <div class="project-type">
+                    <p>Web Development</p>
+                </div>
+                <p class="short-description">A website that integrates APIs for fun facts, videos, and interactive services.</p>
+                <div class="project-details">
+                    <h2>Animal House</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (1).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (2).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (3).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (4).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (5).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (6).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (7).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (8).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (9).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (10).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/web_tech/tecweb (11).png">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">May 2022</p>
+                    <div class="project-technologies">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Bootstrap</p>
+                        <p>JavaScript</p>
+                        <p>Vue.js</p>
+                        <p>Express.js</p>
+                    </div>
+                    <p class="long-description">
+                        Animal House is website for a shelter where users can look for the pets, book appointments with them, register for events or look for volunteering positions. They can also read fun facts about animals, watch popular videos, play games, like Hangman or Meme Generator, or post stories/pictures on their dashboard and share them with the community. Admins can add or remove pets, events and volunteering positions.
+                        <br> The main focus of this project was, other than building a modern and responsive website, to provide services that were built using different APIs (like the fun facts, the top 10 videos, etc). The front-end was made using HTML, CSS (Bootstrap) and JavaScript (Vue), while the back-end was made using Express.
+                    </p>
+                    <a href="https://github.com/sonianicoletti/ProgettoTecWeb">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project" data-id="4">
+                <div class="project-image">
+                    <img src="assets/databases/db (1).png">
+                </div>
+                <h3>ConfVirtual</h3>
+                <div class="project-type">
+                    <p>Databases</p>
+                </div>
+                <p class="short-description">A project that uses relational and non-relational databases to manage virtual conferences.</p>
+                <div class="project-details">
+                    <h2>ConfVirtual</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (1).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (2).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (3).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (4).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (5).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (6).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (7).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (8).png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/databases/db (9).png">
+                            </div>  
+                            <div class="carousel-image">
+                                <img src="assets/databases/ER_model.jpg">
+                            </div>                          
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">April 2022</p>
+                    <div class="project-technologies">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Bootstrap</p>
+                        <p>JavaScript</p>
+                        <p>PHP</p>
+                        <p>MySQL</p>
+                        <p>MongoDB</p>
+                    </div>
+                    <p class="long-description">
+                        ConfVirtual is an online platform used to advertise virtual conferences. Users can register for conferences they like and attend their presentations, hosted by presenters or speakers. Once the presentation has started all registered users can join a chat. The admins can create new conferences, evaluate them and add sponsors to the conferences.
+                        <br> The front-end has been realised using mainly HTML and CSS (JavaScript has been used just for the chat functionality). The back-end was made with PHP, MySQL as the main database and MongoDB to save the logs.
+                    </p>
+                    <a href="https://github.com/erika289/ConfVirtual">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project" data-id="3">
+                <div class="project-image">
+                    <img src="assets/soft_eng/softeng_01.png">
+                </div>
+                <h3>Unitech</h3>
+                <div class="project-type">
+                    <p>Software Engineering</p>
+                </div>
+                <p class="short-description">University portal developed using Agile methodology with Scrum framework.</p>
+                <div class="project-details">
+                    <h2>Unitech</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_01.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_02.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_03.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_04.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_05.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_06.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/softeng_07.png">
+                            </div>   
+                            <div class="carousel-image">
+                                <img src="assets/soft_eng/use_cases.jpg">
+                            </div>                        
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">March 2022</p>
+                    <div class="project-technologies">
+                        <p>Java</p>
+                    </div>
+                    <p class="long-description">
+                        Unitech is a university website where users can find information about the institution and from which professors, students and admins can access their own portal. Professors can create new classes, add exams and give grades while students can register for classes and view their personal information.
+                        <br> The website has been realised entirely in Java, using the GWT framework, and the database was made using MapDB. The Agile methodology, specifically Scrum, was used by the team during the entire project.
+                    </p>
+                    <a href="https://github.com/sonianicoletti/ProgettoSWENG">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project" data-id="2">
+                <div class="project-image">
+                    <img src="assets/statistics/stat_01.png">
+                </div>
+                <h3>Breast Cancer Prediction with SVM</h3>
+                <div class="project-type">
+                    <p>Statistics</p>
+                </div>
+                <p class="short-description">SVM model predicts breast cancer diagnosis using dataset feature analysis.</p>
+                <div class="project-details">
+                    <h2>Breast Cancer Prediction with SVM</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/statistics/stat_01.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/statistics/stat_02.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/statistics/stat_03.png">
+                            </div>
+                            <div class="carousel-image">
+                                <img src="assets/statistics/stat_04.png">
+                            </div>                            
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">June 2021</p>
+                    <div class="project-technologies">
+                        <p>R</p>
+                    </div>
+                    <p class="long-description">
+                        This research uses a breast cancer dataset from the University of Wisconsin Madison containing information on 569 cases. After cleaning and splitting the dataset, SVM models are trained to predict tumor diagnosis. Cell nucleus characteristics are analyzed via visualizations, and the model training is followed by the performance evaluations and hyperparameter optimization. It is observed that some characteristics, such as radius, perimeter, area and texture, are strongly correlated with tumor diagnosis. Finally, the model predictions are interpreted and the most significant features are selected.
+                    </p>
+                </div>
+            </div>
+            <!-- Project 1 -->
+            <div class="project" data-id="1">
+                <div class="project-image">
+                    <img src="assets/programming/prog_1.png">
+                </div>
+                <h3>Mutliplayer Tetris</h3>
+                <div class="project-type">
+                    <p>Java Programming</p>
+                </div>
+                <p class="short-description">An online multiplayer version of Tetris.</p>
+                <div class="project-details">
+                    <h2>Mutliplayer Tetris</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&lt;</button>
+                        <div class="carousel-images">
+                            <div class="carousel-image">
+                                <img src="assets/programming/prog_1.png">
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&gt;</button>
+                    </div>
+                    <p class="project-date">June 2021</p>
+                    <div class="project-technologies">
+                        <p>Java</p>
+                    </div>
+                    <p class="long-description">
+                        This game is a spin-off of the original Tetris game, which I'm sure you've heard of. The main difference is that this is a multiplayer version, where each player competes against others to survive longer in the game. Additionally, every time a player completes a row, they can send a "trash row" to another player of their choice to increase the game's difficulty.
+                        <br> This game was developed in Java, with the user interface generated using the Swing framework. For the client-server connection, we utilized the ServerSocket and Socket classes from the java.net package.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <a href="cv.pdf" class="button">Download CV</a>
+        <h1>Curriculum Vitae</h1>
+        <a href="cv.pdf" class="button">Download my CV</a>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
+        <h1>Contact</h1>
+        <p>Contact me by reordering the following strings:</p>
+        <p style="font-family: 'Computer Modern Concrete';">"sonia.nicoletti00", "gmail.com", "@"</p>
+        <div class="social-links">
+            <a href="https://github.com/sonianicoletti" target="_blank" aria-label="GitHub">
+                <img src="assets/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/sonia-nicoletti/" target="_blank" aria-label="LinkedIn">
+                <img src="assets/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Sonia Nicoletti</p>
     </footer>
 </body>
 </html>
