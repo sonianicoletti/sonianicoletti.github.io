@@ -98,6 +98,7 @@ section {
     width: 100%;
     gap: 1em;
     text-align: left;
+    align-items: center;
 }
 
 .about-left {
@@ -110,6 +111,9 @@ section {
     height: auto;
     border-radius: 5px;
     margin-top: 20px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
 }
 
 .social-links {
