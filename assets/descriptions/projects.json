@@ -1,0 +1,425 @@
+[
+    {
+        "title": "Spook the Machine",
+        "short_description": "Studying how humans scare phobia-driven AI agents.",
+        "long_description": "We designed and deployed a web-based experiment where ~800 users attempted to frighten 100 LLM-powered chatbots, each assigned a unique phobia, emotional condition and reward mechanism, generating ~15,000 human-AI interactions. We analysed how phobia identity, emotional condition and incentive structure relate to patterns in machine fear expression and human creative exploration, using sentiment analysis, BERT-based semantic clustering and Minimum Spanning Tree measures to track how collective thematic strategies evolved over time across different agent configurations.",
+        "topics": [
+            "Affective Computing",
+            "Machine behavior",
+            "Natural Language Processing",
+            "LLMs"
+        ],
+        "tech_stack": [
+            "Python"
+        ],
+        "date": "November 2025",
+        "status": "open",
+        "images_folder": "assets/images/projects/spook",
+        "default_img": "screen.png",
+        "images": [
+            "screen.png"
+        ]
+    },
+    {
+        "title": "AI-delivered Bias Training",
+        "short_description": "Testing if an AI-delivered unconscious bias training can reduce bias in people.",
+        "long_description": "This project investigates whether unconscious bias training can reduce nationality-based inequalities in leadership perceptions and cooperation within multinational teams. Drawing on Status Characteristics Theory, nationality functions as a status cue — individuals from higher-HDI countries are more readily perceived as competent leaders. A field experiment in a Scandinavian fintech company tested human-delivered training, while an online experiment examines whether an AI avatar can produce comparable effects, with implications for building more inclusive workplaces in an increasingly AI-mediated world.",
+        "topics": [
+            "Bias",
+            "Human-AI Interaction"
+        ],
+        "tech_stack": [
+            "Python",
+            "HeyGen"
+        ],
+        "date": "November 2025",
+        "status": "open",
+        "images_folder": "assets/images/projects/bias",
+        "default_img": "video.png",
+        "images": [
+            "video.png"
+        ]
+    },
+    {
+        "title": "Walking the DEI Talk",
+        "short_description": "Distinguishing authentic CEO DEI commitment from performative discourse using NLP.",
+        "long_description": "This project examines whether CEO communications about diversity, equity, and inclusion reflect genuine organizational commitment or strategic impression management. Through interviews with 31 Fortune 500 CEOs, we developed a theoretical framework linking personal value internalization to authentic DEI action. Building on this foundation, we designed a natural language processing tool that analyzes CEO public discourse to identify authenticity signals—including personal narratives, internalized values, promotion-focused language, and concrete commitments. By correlating these communication patterns with organizational DEI outcomes (LGBTQ+ inclusion ratings, board diversity, workforce representation), the research intends to demonstrate that authentic leadership discourse is related to a measurably stronger inclusion performance, providing stakeholders with evidence-based accountability mechanisms.",
+        "topics": [
+            "Leadership",
+            "DEI",
+            "Social Media Analysis",
+            "Natural Language Processing"
+        ],
+        "tech_stack": [
+            "Python"
+        ],
+        "date": "November 2025",
+        "status": "open",
+        "images_folder": "assets/images/projects/ceos",
+        "default_img": "pipeline.png",
+        "images": [
+            "Flowchart.png",
+            "pipeline.png"
+        ]
+    },
+    {
+        "title": "Learning to Teach",
+        "short_description": "Optimising LLMs for teaching rather than task assistance.",
+        "long_description": "We study how language changes when large language models are optimized for teaching rather than direct task success. The project examines whether a stronger model can transmit reasoning strategies to a weaker model through in-context examples. We compare training signals based on the student’s success on the same task versus performance on related transfer tasks. This setup allows us to analyze how different incentives shape the teacher model’s explanations and communication strategies. We then evaluate whether instruction optimized for student learning also corresponds with improved performance on analogous tasks in both models and human participants.",
+        "topics": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "LLMs"
+        ],
+        "tech_stack": [
+            "Python"
+        ],
+        "date": "November 2025",
+        "status": "closed",
+        "images_folder": "assets/images/projects/ltt",
+        "default_img": "teach.png",
+        "images": [
+            "teach.png"
+        ]
+    },
+    {
+        "title": "Blocks and Python",
+        "short_description": "Interactive platform for teaching K-12 computational thinking with Python.",
+        "long_description": "Within the Machine Teaching Group at the Max Planck Institute for Software Systems, we developed Blocks and Python, an educational platform for teaching computational thinking. My work focused on implementing interactive programming tasks and grid-based learning environments where students solve problems using Python code. I contributed to the React/TypeScript frontend, task infrastructure, and execution pipeline that runs and visualizes student code, including the grid-based task system, task navigation, and feedback mechanisms used throughout the platform. Work was conducted under the supervision of Adish Singla.",
+        "topics": [
+            "Computing Education",
+            "Web Development"
+        ],
+        "tech_stack": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "React",
+            "Python"
+        ],
+        "date": "September 2025",
+        "status": "closed",
+        "images_folder": "assets/images/projects/blocks_python",
+        "default_img": "web.png",
+        "images": [
+            "web.png"
+        ]
+    },
+    {
+        "title": "Essence Coach",
+        "short_description": "LLM-powered chatbot for supporting Essence-based software engineering practices.",
+        "long_description": "We developed a chatbot that integrates large language models (LLMs) with the Essence standard to support software engineering practices and project management activities. The system uses a retrieval-augmented generation (RAG) architecture to retrieve information from a curated collection of Essence-related documents and incorporate it into generated responses. We evaluated the system through context retrieval metrics (Precision@K, MRR, MAP) and response quality assessments using BERTScore and human evaluation across different question types. The project explores how LLM-based chatbots can assist users in understanding and applying software engineering practices by providing structured, context-aware guidance grounded in the Essence framework.",
+        "topics": [
+            "Software Engineering",
+            "LLMs",
+            "Information Retrieval"
+        ],
+        "tech_stack": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python",
+            "R"
+        ],
+        "date": "August 2024",
+        "status": "closed",
+        "images_folder": "assets/images/projects/essence",
+        "default_img": "overview.png",
+        "images": [
+            "Screenshot 2026-03-05 at 14.15.39.png",
+            "Screenshot 2026-03-05 at 14.15.57.png",
+            "overview.png"
+        ]
+    },
+    {
+        "title": "Customer segmentation analysis for AI-Driven Healthcare Applications",
+        "short_description": "Clustering potential users of AI-driven healthcare applications through survey analysis.",
+        "long_description": "This project examines customer segmentation for AICare4You, an envisioned AI-powered medical chatbot designed to provide health advice and medication prescriptions based on user data. By analyzing survey responses from potential users, the study identifies key preferences for chatbot functionalities, such as a focus on general wellness or diagnosis-oriented features. Using Principal Component Analysis (PCA) and hierarchical clustering techniques, five distinct customer segments were identified, ranging from cost-conscious skeptics to fitness enthusiasts and AI enthusiasts who fully embrace the technology. These insights highlight the diverse expectations and challenges in designing AI-driven healthcare solutions.",
+        "topics": [
+            "Business Intelligence",
+            "Machine Learning"
+        ],
+        "tech_stack": [
+            "SAS",
+            "Python"
+        ],
+        "date": "July 2024",
+        "status": "closed",
+        "images_folder": "assets/images/projects/bi",
+        "default_img": "bi_01.png",
+        "images": [
+            "bi_01.png",
+            "bi_02.png",
+            "bi_03.png",
+            "bi_04.png",
+            "bi_05.png",
+            "bi_06.png"
+        ]
+    },
+    {
+        "title": "Exploring Public Discourse on AI Risks",
+        "short_description": "Analyzing public discourse on AI risks through sentiment and topic modeling.",
+        "long_description": "This social media research explores the public discourse surrounding the risks and opportunities associated with artificial intelligence. I collected and analyzed YouTube comments from AI-related videos published between 2020 and 2023. The methodology involved sentiment analysis, topic modeling, and dictionary-based text analysis.",
+        "topics": [
+            "Social Media Analysis",
+            "Natural Language Processing"
+        ],
+        "tech_stack": [
+            "R",
+            "Python"
+        ],
+        "date": "January 2024",
+        "status": "closed",
+        "images_folder": "assets/images/projects/social_media",
+        "default_img": "social_00.png",
+        "repo": "https://github.com/sonianicoletti/SOCNE-Project",
+        "images": [
+            "social_00.png",
+            "social_01.png",
+            "social_02.png",
+            "social_03.png",
+            "social_04.png",
+            "social_05.png"
+        ]
+    },
+    {
+        "title": "Syntax Analysis Tutorial",
+        "short_description": "LL(1) grammar parsing tutorial with interactive exercises.",
+        "long_description": "This Mathematica tutorial contains a generator of exercises on parsing LL(1) grammars. The objective is to explain to the user the procedure for solving this type of exercise. The exercise consists of generating the Nullable, First and Follow sets and filling in the parsing table. The primary areas of our focus revolved around the management of nested lists, comprehension of function scope, and the creation of user interfaces. Moreover, we applied our expertise in compiler theory to assess and streamline the core aspects of this subject matter.",
+        "topics": [
+            "Compilers",
+            "Programming Languages"
+        ],
+        "tech_stack": [
+            "Mathematica"
+        ],
+        "date": "July 2023",
+        "status": "closed",
+        "images_folder": "assets/images/projects/maths",
+        "default_img": "mate_1.png",
+        "repo": "https://github.com/sonianicoletti/ProgettoMC",
+        "images": [
+            "mate_1.png"
+        ]
+    },
+    {
+        "title": "Tailored Travel Insurance Solutions",
+        "short_description": "Predictive model for recommending travel insurance.",
+        "long_description": "The objective of this project was to build a predictive model that could suggest the most fitting travel insurance package for a particular customer. The tools used were WEKA and R.",
+        "topics": [
+            "Data Mining",
+            "Predictive Modeling"
+        ],
+        "tech_stack": [
+            "R",
+            "WEKA"
+        ],
+        "date": "December 2022",
+        "status": "closed",
+        "images_folder": "assets/images/projects/data_mining",
+        "default_img": "INFO371_00.jpg",
+        "images": [
+            "INFO371_00.jpg",
+            "INFO371_01.jpg",
+            "INFO371_02.jpg",
+            "INFO371_03.jpg",
+            "INFO371_04.jpg",
+            "INFO371_05.jpg",
+            "INFO371_06.jpg",
+            "INFO371_07.jpg",
+            "INFO371_08.jpg",
+            "INFO371_09.jpg",
+            "INFO371_10.jpg",
+            "INFO371_11.jpg",
+            "INFO371_12.jpg",
+            "INFO371_13.jpg",
+            "INFO371_14.jpg",
+            "INFO371_15.jpg",
+            "INFO371_16.jpg",
+            "INFO371_17.jpg",
+            "INFO371_18.jpg",
+            "INFO371_19.jpg",
+            "INFO371_20.jpg",
+            "INFO371_21.jpg",
+            "INFO371_22.jpg",
+            "INFO371_23.jpg"
+        ]
+    },
+    {
+        "title": "Cluedo Mobile",
+        "short_description": "Cluedo-inspired Android app using Clean Architecture.",
+        "long_description": "This Android app is inspired by the famous mystery game Cluedo. Friends can play online together by joining the same game. Once the host has started the game each player has to guess Where, by Who and How the murder was committed making accusations and replying to others accusations. The front-end side has been realised using Kotlin and the Clean Architecture paradigm, in particular MVVM pattern. The back-end and the multiplayer functionality have been realised through Firebase.",
+        "topics": [
+            "Mobile Apps",
+            "Game Development",
+            "Android"
+        ],
+        "tech_stack": [
+            "Kotlin",
+            "Firebase"
+        ],
+        "date": "June 2022",
+        "status": "closed",
+        "images_folder": "assets/images/projects/mobile_apps",
+        "default_img": "app_01.png",
+        "repo": "https://github.com/sonianicoletti/ProgettoLAM",
+        "images": [
+            "app_01.png",
+            "app_02.png",
+            "app_03.png",
+            "app_04.png",
+            "app_05.png",
+            "app_06.png",
+            "app_07.png",
+            "app_08.png",
+            "app_09.png",
+            "app_10.png",
+            "app_11.png",
+            "app_12.png",
+            "app_13.png",
+            "app_14.png",
+            "clean_architecture.png"
+        ]
+    },
+    {
+        "title": "Animal House",
+        "short_description": "A website that integrates APIs for fun facts, videos, and interactive services.",
+        "long_description": "Animal House is website for a shelter where users can look for the pets, book appointments with them, register for events or look for volunteering positions. They can also read fun facts about animals, watch popular videos, play games, like Hangman or Meme Generator, or post stories/pictures on their dashboard and share them with the community. Admins can add or remove pets, events and volunteering positions. The main focus of this project was, other than building a modern and responsive website, to provide services that were built using different APIs (like the fun facts, the top 10 videos, etc). The front-end was made using HTML, CSS (Bootstrap) and JavaScript (Vue), while the back-end was made using Express.",
+        "topics": [
+            "Web Development",
+            "API Integration"
+        ],
+        "tech_stack": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "Vue.js",
+            "Express.js"
+        ],
+        "date": "May 2022",
+        "status": "closed",
+        "images_folder": "assets/images/projects/web_tech",
+        "default_img": "tecweb (1).png",
+        "repo": "https://github.com/sonianicoletti/ProgettoTecWeb",
+        "images": [
+            "tecweb (1).png",
+            "tecweb (10).png",
+            "tecweb (11).png",
+            "tecweb (2).png",
+            "tecweb (3).png",
+            "tecweb (4).png",
+            "tecweb (5).png",
+            "tecweb (6).png",
+            "tecweb (7).png",
+            "tecweb (8).png",
+            "tecweb (9).png"
+        ]
+    },
+    {
+        "title": "ConfVirtual",
+        "short_description": "A project that uses relational and non-relational databases to manage virtual conferences.",
+        "long_description": "ConfVirtual is an online platform used to advertise virtual conferences. Users can register for conferences they like and attend their presentations, hosted by presenters or speakers. Once the presentation has started all registered users can join a chat. The admins can create new conferences, evaluate them and add sponsors to the conferences. The front-end has been realised using mainly HTML and CSS (JavaScript has been used just for the chat functionality). The back-end was made with PHP, MySQL as the main database and MongoDB to save the logs.",
+        "topics": [
+            "Databases",
+            "Web Development"
+        ],
+        "tech_stack": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "PHP",
+            "MySQL",
+            "MongoDB"
+        ],
+        "date": "April 2022",
+        "status": "closed",
+        "images_folder": "assets/images/projects/databases",
+        "default_img": "db (1).png",
+        "repo": "https://github.com/erika289/ConfVirtual",
+        "images": [
+            "ER_model.jpg",
+            "db (1).png",
+            "db (2).png",
+            "db (3).png",
+            "db (4).png",
+            "db (5).png",
+            "db (6).png",
+            "db (7).png",
+            "db (8).png",
+            "db (9).png"
+        ]
+    },
+    {
+        "title": "Unitech",
+        "short_description": "University portal developed using Agile methodology with Scrum framework.",
+        "long_description": "Unitech is a university website where users can find information about the institution and from which professors, students and admins can access their own portal. Professors can create new classes, add exams and give grades while students can register for classes and view their personal information. The website has been realised entirely in Java, using the GWT framework, and the database was made using MapDB. The Agile methodology, specifically Scrum, was used by the team during the entire project.",
+        "topics": [
+            "Software Engineering",
+            "Agile",
+            "Web Development"
+        ],
+        "tech_stack": [
+            "Java"
+        ],
+        "date": "March 2022",
+        "status": "closed",
+        "images_folder": "assets/images/projects/soft_eng",
+        "default_img": "softeng_01.png",
+        "repo": "https://github.com/sonianicoletti/ProgettoSWENG",
+        "images": [
+            "softeng_01.png",
+            "softeng_02.png",
+            "softeng_03.png",
+            "softeng_04.png",
+            "softeng_05.png",
+            "softeng_06.png",
+            "softeng_07.png",
+            "use_cases.jpg"
+        ]
+    },
+    {
+        "title": "Breast Cancer Prediction with SVM",
+        "short_description": "SVM model predicts breast cancer diagnosis using dataset feature analysis.",
+        "long_description": "This research uses a breast cancer dataset from the University of Wisconsin Madison containing information on 569 cases. After cleaning and splitting the dataset, SVM models are trained to predict tumor diagnosis. Cell nucleus characteristics are analyzed via visualizations, and the model training is followed by the performance evaluations and hyperparameter optimization. It is observed that some characteristics, such as radius, perimeter, area and texture, are strongly correlated with tumor diagnosis. Finally, the model predictions are interpreted and the most significant features are selected.",
+        "topics": [
+            "Statistics",
+            "Healthcare",
+            "Machine Learning"
+        ],
+        "tech_stack": [
+            "R"
+        ],
+        "date": "June 2021",
+        "status": "closed",
+        "images_folder": "assets/images/projects/statistics",
+        "default_img": "stat_01.png",
+        "images": [
+            "stat_01.png",
+            "stat_02.png",
+            "stat_03.png",
+            "stat_04.png"
+        ]
+    },
+    {
+        "title": "Multiplayer Tetris",
+        "short_description": "An online multiplayer version of Tetris.",
+        "long_description": "This game is a spin-off of the original Tetris game, which I'm sure you've heard of. The main difference is that this is a multiplayer version, where each player competes against others to survive longer in the game. Additionally, every time a player completes a row, they can send a \"trash row\" to another player of their choice to increase the game's difficulty. This game was developed in Java, with the user interface generated using the Swing framework. For the client-server connection, we utilized the ServerSocket and Socket classes from the java.net package.",
+        "topics": [
+            "Java Programming",
+            "Game Development",
+            "Networking"
+        ],
+        "tech_stack": [
+            "Java"
+        ],
+        "date": "June 2021",
+        "status": "closed",
+        "images_folder": "assets/images/projects/programming",
+        "default_img": "prog_1.png",
+        "images": [
+            "prog_1.png"
+        ]
+    }
+]
